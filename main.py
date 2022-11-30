@@ -121,9 +121,7 @@ class Grammar:
  
     def remove_useless_symbols(self):
         """ Очень сложный алгоритм, спасибо, Алексей, Евгений """
-        if(self.is_not_empty(1)):
             return self.is_not_empty().remove_unreachable_symbols()
-        return self
  
  
 if __name__ == '__main__':
